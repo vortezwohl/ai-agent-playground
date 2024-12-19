@@ -1,0 +1,6 @@
+.venv
+.cache
+.env
+result.txt
+.idea
+test
