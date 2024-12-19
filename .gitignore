@@ -1,6 +1,6 @@
 .venv
 .cache
-.env
+#.env
 result.txt
 .idea
 test
