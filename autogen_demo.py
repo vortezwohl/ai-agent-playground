@@ -1,9 +1,9 @@
 import os
 
 from autogen import ConversableAgent
+from dotenv import load_dotenv
 
-os.environ['OPENAI_API_KEY'] = ('sk-proj-meyIPXguKnBTiRbMIr5ugXf5fvGh_cb6p3ycJ9CARvLYaKI22sjc9NwTO64TzsJupRCrcRa5-'
-                                'gT3BlbkFJY1zhfGm_QbTShlIQCo1LQQrJg1sFOQXtxx3kuwu_JNpKYzooqwH8M2ZVPsZ1anRra1f2HiIroA')
+load_dotenv()
 
 agent_with_number = ConversableAgent(
     "agent_with_number",

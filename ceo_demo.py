@@ -1,5 +1,4 @@
 import logging
-import os
 
 from ceo import (
     Agent,
@@ -8,10 +7,10 @@ from ceo import (
     ability
 )
 from sympy import simplify
+from dotenv import load_dotenv
 
+load_dotenv()
 logging.getLogger('ceo').setLevel(logging.DEBUG)
-os.environ['OPENAI_API_KEY'] = ('sk-proj-meyIPXguKnBTiRbMIr5ugXf5fvGh_cb6p3ycJ9CARvLYaKI22sjc9NwTO64TzsJupRCrcRa5-'
-                                'gT3BlbkFJY1zhfGm_QbTShlIQCo1LQQrJg1sFOQXtxx3kuwu_JNpKYzooqwH8M2ZVPsZ1anRra1f2HiIroA')
 
 
 @ability
