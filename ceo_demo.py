@@ -11,6 +11,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 logging.getLogger('ceo').setLevel(logging.DEBUG)
+# logging.getLogger('ceo.prompt').setLevel(logging.DEBUG)
 
 
 @ability
@@ -28,6 +29,6 @@ def write_file(filename: str, content: str) -> str:
 
 if __name__ == '__main__':
     ceo = Agent(abilities=[calculator, write_file], brain=get_openai_model(), name='CEO', personality=Personality.INQUISITIVE)
-    ceo.assign(r"这是一个半径为 (1 * 9.5 / 2 * 2) 厘米的球体，其中π取值为 3.14159，请分别计算其表面积和体积，然后将结果写入 D:\project\playground\result.txt，过程中请使用中文交流。")
+    ceo.assign(r"这是一个半径为 (1 * 9.5 / 2 * 2) 厘米的球体，其中π取值为 3.14159，请分别计算其表面积和体积，然后将结果写入 D:\project\playground\result.txt，")
     result = ceo.just_do_it()
     print(result)
